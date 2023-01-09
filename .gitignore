@@ -1,0 +1,10 @@
+
+# IDE
+.vscode
+
+# Python
+venv*/
+*.py[co]
+
+# mkdocs
+site/

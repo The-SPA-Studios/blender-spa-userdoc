@@ -1,0 +1,12 @@
+site_name: Blender SPA User Documentation
+# TODO: site_url: https://example.com/
+nav:
+  - Introduction: index.md
+  - Layout Guide: layout.md
+  - Animation Guide: anim.md
+  - About:
+      - The SPA Studios: about/studio.md
+      - Contributing: about/contributing.md
+      - License: about/license.md
+  # TODO: - About: about.md
+theme: readthedocs
