@@ -2,7 +2,7 @@
 
 ## What is _Blender SPA_
 
-_Blender SPA_ is the Blender fork and toolset used internally at [the SPA Studios](/about/studio).
+_Blender SPA_ is the Blender fork and toolset used internally at [the SPA Studios](./about/studio).
 
 It consists of:
 
@@ -14,8 +14,8 @@ It consists of:
 
 This documentation is a guide for _Blender SPA_ users.
 
-- The [layout guide](/anim) focuses on the improved sequencer workflow.
-- The [animation guide](/layout) focuses on drawing and animation workflows.
+- The [layout guide](./layout) focuses on the improved sequencer workflow.
+- The [animation guide](./anim) focuses on drawing and animation workflows.
 
 Note that storyboarders and 2d layout artists might find useful information in both sections.
 
@@ -30,7 +30,7 @@ with core changes and addons for Windows (64 bits).
 Simply download it from the link below and unzip it,
 and run Blender from there.
 
-[⭳⭳⭳ Download _Blender SPA v2.4.1_ for _Windows 64bits_  ⭳⭳⭳][blender_spa-2.4.1-bundle-windows64.zip]
+[Download _Blender SPA v2.4.1_ for _Windows 64bits_][blender_spa-2.4.1-bundle-windows64.zip]
 
 ### Linux, MacOS and other platforms
 
