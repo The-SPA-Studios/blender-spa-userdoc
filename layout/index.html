@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Layout Guide - Blender SPA User Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Layout Guide";
+        var mkdocs_page_input_path = "layout.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Blender SPA User Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Layout Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#open-spa-previz-template">Open SPA Previz Template</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#your-first-shot">Your first shot</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-toolbar">Editing Toolbar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#load-reference-video-into-sequencer">Load Reference Video into Sequencer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#switching-a-shots-camera">Switching a Shots Camera</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rendering-your-sequence">Rendering your Sequence</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../anim/">Animation Guide</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/studio/">The SPA Studios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/contributing/">Contributing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/license/">License</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Blender SPA User Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Layout Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction">Introduction</h1>
+<p>At SPA we are developing our own studio-specific Blender with a set of UI changes and tools to ease newcomers to it and continue refining its capabilities based on your direct production feedback.</p>
+<p><strong>This document aims to give you the basic knowledge to quickly start Layout in Blender at SPA</strong>.</p>
+<h2 id="open-spa-previz-template">Open SPA Previz Template</h2>
+<p>The first time you launch Blender you will be see the Blender Splash Screen. On the right is a list of recent files, on the left is templates to create a new file from. To get started in the SPA Animation experience select <code>&lt;strong&gt;SPA Previz&lt;/strong&gt;</code> template.</p>
+<p><a href="../images/gallery/2022-10/image-1664808321149.png"><img alt="image-1664808321149.png" src="../images/gallery/2022-10/scaled-1680-/image-1664808321149.png" /></a></p>
+<p>After launching the template you will see the default SPA Previz workspace. This workspace is opened to a 3D workspace you may be familiar with.</p>
+<p><a href="../images/gallery/2022-09/image-1663199988974.png"><img alt="image-1663199988974.png" src="../images/gallery/2022-09/scaled-1680-/image-1663199988974.png" /></a></p>
+<h2 id="your-first-shot">Your first shot</h2>
+<p>A shot is a container that points to a specific camera at a specific time in your blender scene. A sequence is composed of multiple shots, pointing to multiple cameras. Each camera can be used at different points in time, some cameras are reused multiple times.</p>
+<p>Shots are used to edit a sequence based on the action in your scene. Use Blender’s Sequencer to add a new shot. To get started from the Sequencer header Menu find <span class="c7"><strong>Shot &gt; New</strong>.</span> <em><span class="c22">For more detail on how to add Shots see </span><span class="c7 c22"><a href="#understanding-shots">Understanding Shots</a> </span></em></p>
+<p><a href="../images/gallery/2022-09/image-1663200154380.gif"><img alt="image-1663200154380.gif" src="../images/gallery/2022-09/image-1663200154380.gif" /></a></p>
+<h2 id="editing-toolbar">Editing Toolbar</h2>
+<p>The toolbar can be found by hitting T on your keyboard or navigating to <strong>View&gt;Toolbar</strong> in the toolbar you can find the selection tool and the blade tool.</p>
+<p><a href="../images/gallery/2022-09/image-1663246870167.png"><img alt="image-1663246870167.png" src="../images/gallery/2022-09/scaled-1680-/image-1663246870167.png" /></a></p>
+<h2 id="load-reference-video-into-sequencer">Load Reference Video into Sequencer</h2>
+<ol>
+<li>Move your sequence clips up to the second channel by using Y and moving your mouse upwards.</li>
+<li>Create a new Movie clip by going to <strong>Add&gt;Movie</strong></li>
+<li>You can select a channel in the loader settings on the Right side of the pop up</li>
+<li>Your reference is now in the sequence</li>
+<li>View your reference in the same area as your sequencer by enabling <strong>View&gt;Preview as Background</strong></li>
+</ol>
+<p><a href="../images/gallery/2022-09/image-1663201136621.gif"><img alt="image-1663201136621.gif" src="../images/gallery/2022-09/image-1663201136621.gif" /></a></p>
+<h2 id="switching-a-shots-camera">Switching a Shots Camera</h2>
+<p>Each shot in the sequencer is linked to a scene and a camera. You can see a list of these shots and their corresponding data under the sequencer panel. This is a comprehensive list of all the shots in your edit, the highlighted shot being the active shot on the current frame.</p>
+<p><span class="c11 c48 c7">When a shot is highlighted its properties become available to modify; scene, camera and focal length. For example if you want to change the camera assigned to SH0010, navigate to the shot SH0010 in the sequencer. Find the <strong>Layout</strong>&gt;<strong>Sequence</strong> side panel<strong>.</strong> Select a new camera from the <strong>Camera</strong> dropdown menu.</span></p>
+<p><a href="../images/gallery/2022-09/image-1663202161165.gif"><img alt="image-1663202161165.gif" src="../images/gallery/2022-09/image-1663202161165.gif" /></a></p>
+<h2 id="rendering-your-sequence">Rendering your Sequence</h2>
+<p><span class="c35 c50">Rendering is the process of exporting the final frames of animation from the editing area into either Movie or Image files. This rendering workflow allows simple batch rendering of all or selected shots in the </span><span class="c7 c9"><a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html?highlight=sequencer">Sequencer</a></span><span class="c11 c35 c39">. The render area allows for playback of the rendered images.</span></p>
+<p><a href="../images/gallery/2022-09/image-1663201894353.png"><img alt="image-1663201894353.png" src="../images/gallery/2022-09/scaled-1680-/image-1663201894353.png" /></a></p>
+<ol>
+<li>Navigate to the <a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html?highlight=sequencer"><strong>Sequencer</strong></a>&gt;<strong>Storyboarding Panel</strong> in Editing area</li>
+<li>Set the following settings under <strong>Batch Render</strong><ul>
+<li>Set media type: Images or Movie. <em>This will define the output file type.</em></li>
+<li>Renderer: <em>Viewport=Faster Internal=Standard Render Engine</em></li>
+<li>OutputScene: <em>This output is usually RENDER or SEQ Render</em></li>
+<li>File Pattern: <em>output to a folder called render at the location of the blend file</em></li>
+<li>Selection Only: <em>only render highlighted clips from the sequencer.</em></li>
+<li>Select <strong>Sequencer Batch Render</strong> to begin rendering</li>
+</ul>
+</li>
+<li>Once complete the user will see the completed files in the Render area <strong>tab</strong></li>
+</ol>
+<h1 id="editing-rendering">Editing &amp; Rendering</h1>
+<h1 id="understanding-shots">Understanding shots</h1>
+<p><span class="c1">A Previz sequence can be composed of a single “shot” or multiple “shots”.</span></p>
+<p>A shot is a container that points to a specific camera at a specific time in your blender scene. A sequence is composed of multiple shots, pointing to multiple cameras. Each camera can be used at different points in time, some cameras are reused multiple times.</p>
+<p>Shots are used to edit a sequence based on the action in your scene. Use Blender’s Sequencer to add a new shot. To get started from the Sequencer header Menu find <span class="c7"><strong>Shot &gt; New</strong>.</span> <em><span class="c22">For more detail on how to add Shots see </span><span class="c7 c22"><a href="#bkmrk-managing-shots">Managing Shots</a> </span></em></p>
+<p><a href="../images/gallery/2022-06/image-1656524650679.gif"><img alt="image-1656524650679.gif" src="../images/gallery/2022-06/image-1656524650679.gif" /></a></p>
+<p>In most cases during Previz a Blend file will contain one Scene where all action occurs, any shots in the sequence will point to this same Existing Scene. In this case each shot or strip represents both a ‘Camera’ and ‘a point in time’ within an existing scene.</p>
+<p><span class="c22">Shots can also point to a different Blender Scene. Shots that point to different scenes is an advanced topic, covered later in the document. <em>See <a href="#bkmrk-switch-a-shot%E2%80%99s-came">Switch a Shot's Scene</a> for more information</em></span></p>
+<hr />
+<h3 id="navigating-between-shots"><span class="c11 c48 c7">Navigating Between Shots</span></h3>
+<p>The 3D Viewport and Dope Sheet timeline interfaces can be<span class="c1"> synchronized with the master play-head from the Sequencer. </span><span class="c1">When scrubbing from scene to scene in the sequencer, the corresponding scene content will be shown into the 3D Viewport and Dope Sheet.</span></p>
+<p class="callout info"><span class="c1">Pay attention to the difference in behavior between scrubbing or using arrow keys in each area (Dope Sheet or Sequencer)</span></p>
+
+<ol>
+<li>
+<p><strong><span class="c7">Using the Sequencer</span></strong> scrub or play to navigate between shots.
+    <img alt="image" src="../images/gallery/other/24e060607bc68592b45f8012151ad9de.gif" /></p>
+<p><span class="c1">
+</span>
+2. <strong><span class="c7">Using the Dope Sheet</span></strong>, navigating frame by frame with the arrow keys, the next shot will load after the final frame. <span class="c22 c30">(only frame by frame not scrubbing)</span><a href="../images/gallery/2022-06/image-1656524874274.gif"><img alt="image-1656524874274.gif" src="../images/gallery/2022-06/image-1656524874274.gif" /></a></p>
+<p><span class="c29 c30 c22 c47">
+</span>
+3. <strong><span class="c7">Using the Dope Sheet</span></strong> scrub the timeline to remain in that current camera’s view. <span class="c30 c22">(only scrubbing not frame by frame)
+</span><img alt="image" src="../images/gallery/other/68ff2cfb40945e36d0a11fe1b4fc13b0.gif" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="switch-a-shots-camera"><span class="c11 c48 c7">Switch a Shot’s Camera</span></h3>
+<p><span style="font-weight: 400;">Each shot in the sequencer is linked to a scene and a camera. </span><span style="font-weight: 400;">You can see a list of these shots and their corresponding data under the sequencer panel. This is a comprehensive list of all the shots in your edit, the highlighted shot being the active shot on the current frame. </span></p>
+<p><span class="c11 c48 c7"><span style="font-weight: 400;">When a shot is highlighted its properties become available to modify; scene, camera and focal length. For example if you want to change the camera assigned to SH0010, navigate to the shot SH0010 in the sequencer. Find the </span><strong>Layout</strong><span style="font-weight: 400;">&gt;</span><strong>Sequence</strong> <span style="font-weight: 400;">side panel</span><strong>.</strong><span style="font-weight: 400;"> Select a new camera from the </span><strong>Camera</strong> <span style="font-weight: 400;">dropdown menu.
+</span></span></p>
+<p><a href="../images/gallery/2022-06/image-1656525092439.gif"><img alt="image-1656525092439.gif" src="../images/gallery/2022-06/image-1656525092439.gif" /></a></p>
+<hr />
+<h3 id="switch-a-shots-scene">Switch a Shot’s Scene</h3>
+<p><span class="c11 c48 c7"><span style="font-weight: 400;">In the <strong>Layout&gt;Sequence</strong> panel there is a list of all Shots and their corresponding scenes/cameras described in <a href="#bkmrk-switch-a-shot%E2%80%99s-came">Switching Shot's Camera</a>. When a shot is highlighted it's scene can be edited. Navigate to the shot you want to change in the sequencer. Inside the <strong>Layout</strong>&gt;<strong>Sequence</strong> side panel<strong>.</strong> Select a new scene from the Scene dropdown menu. <em>See the<a href="https://docs.blender.org/manual/en/latest/scene_layout/scene/introduction.html"> Blender Manual</a> for more information on scenes.</em>
+</span></span></p>
+<p><span class="c11 c48 c7"><span style="font-weight: 400;"><em><a href="../images/gallery/2022-06/image-1656525303765.gif"><img alt="image-1656525303765.gif" src="../images/gallery/2022-06/image-1656525303765.gif" /></a></em></span></span></p>
+<h1 id="add-remove-and-manage-shots">Add, Remove and Manage Shots</h1>
+<h4 id="new-shots"><span class="c28">New Shots</span></h4>
+<p><span class="c28"><span style="font-weight: 400;">To add a shot select Shot New from the </span><strong>Sequencer</strong><span style="font-weight: 400;"> Header Menu. Update the shot number, in most cases shots will be derived from the Existing scene. </span></span></p>
+<p><a href="../images/gallery/2022-06/image-1656526073260.gif"><img alt="image-1656526073260.gif" src="../images/gallery/2022-06/image-1656526073260.gif" /></a></p>
+<ul>
+<li><strong><span class="c7">Shot Name</span></strong> <span class="c19 c22 c29">Set a Prefix/Number/Take: </span><span class="c22">Use </span><img alt="image" src="../images/gallery/other/fded9cb29cc66b92caccd70bc03089da.png" /><span class="c19 c29 c22"> to get the next available shot name</span></li>
+<li><strong><span class="c7">Scene</span></strong>: <span class="c22">Use existing (</span><span class="c7 c22">most cases</span><span class="c22">) or create a new scene from a Template</span></li>
+<li><strong><span class="c7">Source</span></strong><span class="c7 c22">:</span><span class="c22"> Available scenes + templates: </span><span class="c22 c44">(more about 2D templates </span><span class="c7 c44 c22">TBD)</span></li>
+<li><strong><span class="c10 c7">Duration </span></strong><span class="c5"> - </span><span class="c5 c42 c22">Set the duration in frames</span></li>
+<li><strong><span class="c10 c7">Channel </span></strong><span class="c5">- </span><span class="c5 c22">Select a row (aka channel) to place this new clip on, in the Sequencer</span></li>
+</ul>
+<hr />
+<h4 id="duplicate-shot"><span class="c28">Duplicate Shot</span></h4>
+<p><span class="c28">When Duplicating a shot, the selected contents are appended to the end of your timeline, this also means that these clips are shifted in the Dope Sheet. <em>To duplicate a shot without adjusting its timing in the Scene world use Shift + D.</em> </span></p>
+<p><a href="../images/gallery/2022-06/image-1656526232939.gif"><img alt="image-1656526232939.gif" src="../images/gallery/2022-06/image-1656526232939.gif" /></a></p>
+<hr />
+<h4 id="delete-shot"><span class="c11 c38 c7 c30">Delete Shot</h4>
+<p></span></p>
+<p>Each shot is associated with a scene. To delete a shot normally simply select <span class="c7">Shot&gt;Delete </span>and leave <span class="c7">Delete Scenes</span> unchecked or<span class="c7"> </span>hit ‘<span class="c7">X</span>’ on the keyboard. To remove a shot and the associated scene use <span class="c7">Shot&gt;Delete</span> and check the <span class="c7">Delete Scenes</span> option.</p>
+<p><a href="../images/gallery/2022-06/image-1656526329590.gif"><img alt="image-1656526329590.gif" src="../images/gallery/2022-06/image-1656526329590.gif" /></a></p>
+<p class="callout warning"><span class="c22">Warning: **<span class="c7">Delete Scenes</span>** option will remove associated Scene data from the outliner.</span></p>
+
+<hr />
+<h4 id="adjust-shots-timing"><span class="c11 c7 c30 c38">Adjust Shot’s Timing</span></h4>
+<p><span class="c11 c7 c30 c38">Adjust timing will change the length of a strip in the sequencer and in the Dope Sheet. Adjust Timing affects only one clip at a time. <em>To adjust timing of multiple shots at the same time see <a href="#bkmrk-roll-an-edit">Roll an Edit</a></em></span></p>
+<p><a href="../images/gallery/2022-06/image-1656526375280.gif"><img alt="image-1656526375280.gif" src="../images/gallery/2022-06/image-1656526375280.gif" /></a></p>
+<hr />
+<h4 id="rename-a-shot"><span class="c11 c38 c7 c30">Rename a Shot</span></h4>
+<p><span class="c11 c38 c7 c30">To rename a shot use <strong><span class="c7">Shot&gt;Rename</span></strong>. This will work on a single shot at a time, use the <img alt="image" src="../images/gallery/other/6ebb06a3fddd374b4ab7ac6f089c4815.png" /> to get the next available shot number. Check the rename scene to also rename the scene associated with this strip.</span></p>
+<p><a href="../images/gallery/2022-06/image-1656526403672.png"><img alt="image-1656526403672.png" src="../images/gallery/2022-06/scaled-1680-/image-1656526403672.png" /></a></p>
+<hr />
+<h4 id="rename-all-shots"><span class="c11 c38 c7 c30">Rename All Shots</span></h4>
+<p>After editing your shot names may be out of order. To reset the numbering of all shots use <span class="c7"><strong>Shot&gt;Cleanup&gt;Chronological Numbering</strong>. </span>This will rename all shots based on the specified naming convention. Scenes can also be renamed by selecting a scene rename policy.<span class="c49"> </span></p>
+<p><a href="../images/gallery/2022-06/image-1656526426914.gif"><img alt="image-1656526426914.gif" src="../images/gallery/2022-06/image-1656526426914.gif" /></a></p>
+<h1 id="refining-your-edit">Refining your Edit</h1>
+<p><span class="c5"><span class="c35 c50">Using the Editing Workspace, refinements can be made to edit using Blender’s </span><span class="c35 c7"><a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html">Sequencer</a></span><span class="c35 c50">. </span><span class="c11 c39 c35">The Editing area can be used to refine your edit and add effects/transitions as needed.</span></span></p>
+<p><a href="../images/gallery/2022-06/image-1656525810413.gif"><img alt="image-1656525810413.gif" src="../images/gallery/2022-06/image-1656525810413.gif" /></a></p>
+<p><strong><span class="c5"><span class="c11 c39 c35">Before you begin ensure you have the Editing Workspace selected from the header.</span></span></strong></p>
+<hr />
+<h3 id="edit-a-shots-duration"><span class="c11 c48 c7">Edit a Shot‘s Duration</span></h3>
+<p><span class="c11 c48 c7"><span class="c7"><strong>Dope Sheet</strong>:</span> Select one of the frame handles at the bottom of the Grease Pencil timeline and drag.
+</span><a href="../images/gallery/2022-06/image-1656525859956.gif"><img alt="image-1656525859956.gif" src="../images/gallery/2022-06/image-1656525859956.gif" /></a></p>
+<p><span class="c7"><strong>Sequencer</strong>:</span> Select a frame handle with a mouse. Hit ‘G’ on the keyboard, move the mouse.<a href="../images/gallery/2022-06/image-1656525882321.gif"><img alt="image-1656525882321.gif" src="../images/gallery/2022-06/image-1656525882321.gif" /></a></p>
+<hr />
+<h3 id="slipping-a-shot"><span class="c11 c28 c7 c57 c60">Slipping a shot</span></h3>
+<p><span class="c1">A slip edit means adjusting the in and out points of a clip simultaneously by the same amount in the same direction keeping the total duration of the clip the same. The clips start and end points within the Dope Sheet will change, but not on the sequencer.</span></p>
+<p>From the Dope Sheet select the handle on top of the clip and drag.</p>
+<p><a href="../images/gallery/2022-06/image-1656525927261.gif"><img alt="image-1656525927261.gif" src="../images/gallery/2022-06/image-1656525927261.gif" /></a></p>
+<hr />
+<h3 id="roll-an-edit"><span class="c11 c28 c7 c57 c60">Roll an edit</span></h3>
+<p><span class="c11 c28 c7 c57 c60">A roll edit adjusts the start point and the endpoint of two adjacent clips simultaneously. Do this if you want to move an edit and also adjust the shot’s timing in the Dope Sheet.</span></p>
+<p><span class="c11 c28 c7 c57 c60"><img alt="image" src="../images/gallery/other/ad75060a36f875ed9583a33d8b5d4826.gif" /></span></p>
+<hr />
+<h3 id="managing-shots"><span class="c28">Managing Shots</span></h3>
+<h4 id="new-shots_1"><span class="c28">New Shots</span></h4>
+<p><span class="c28"><span style="font-weight: 400;">To add a shot select Shot New from the </span><strong>Sequencer</strong><span style="font-weight: 400;"> Header Menu. Update the shot number, in most cases shots will be derived from the Existing scene. </span></span></p>
+<p><a href="../images/gallery/2022-06/image-1656526073260.gif"><img alt="image-1656526073260.gif" src="../images/gallery/2022-06/image-1656526073260.gif" /></a></p>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><strong><span class="c7">Shot Name</span></strong> <span class="c19 c22 c29">Set a Prefix/Number/Take: </span><span class="c22">Use </span><img alt="image" src="../images/gallery/other/fded9cb29cc66b92caccd70bc03089da.png" /><span class="c19 c29 c22"> to get the next available shot name</span>
+        - <strong><span class="c7">Scene</span></strong>: <span class="c22">Use existing (</span><span class="c7 c22">most cases</span><span class="c22">) or create a new scene from a Template</span>
+        - <strong><span class="c7">Source</span></strong><span class="c7 c22">:</span><span class="c22"> Available scenes + templates: </span><span class="c22 c44">(more about 2D templates </span><span class="c7 c44 c22">TBD)</span>
+        - <strong><span class="c10 c7">Duration </span></strong><span class="c5"> - </span><span class="c5 c42 c22">Set the duration in frames</span>
+        - <strong><span class="c10 c7">Channel </span></strong><span class="c5">- </span><span class="c5 c22">Select a row (aka channel) to place this new clip on, in the Sequencer</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="duplicate-shot_1"><span class="c28">Duplicate Shot</span></h4>
+<p><span class="c28">When Duplicating a shot, the selected contents are appended to the end of your timeline, this also means that these clips are shifted in the Dope Sheet. <em>To duplicate a shot without adjusting its timing in the Scene world use Shift + D.</em> </span></p>
+<p><a href="../images/gallery/2022-06/image-1656526232939.gif"><img alt="image-1656526232939.gif" src="../images/gallery/2022-06/image-1656526232939.gif" /></a></p>
+<hr />
+<h4 id="delete-shot_1"><span class="c11 c38 c7 c30">Delete Shot</h4>
+<p></span></p>
+<p>Each shot is associated with a scene. To delete a shot normally simply select <span class="c7">Shot&gt;Delete </span>and leave <span class="c7">Delete Scenes</span> unchecked or<span class="c7"> </span>hit ‘<span class="c7">X</span>’ on the keyboard. To remove a shot and the associated scene use <span class="c7">Shot&gt;Delete</span> and check the <span class="c7">Delete Scenes</span> option.</p>
+<p><a href="../images/gallery/2022-06/image-1656526329590.gif"><img alt="image-1656526329590.gif" src="../images/gallery/2022-06/image-1656526329590.gif" /></a></p>
+<p class="callout warning"><span class="c22">Warning: **<span class="c7">Delete Scenes</span>** option will remove associated Scene data from the outliner.</span></p>
+
+<hr />
+<h4 id="adjust-shots-timing_1"><span class="c11 c7 c30 c38">Adjust Shot’s Timing</span></h4>
+<p><span class="c11 c7 c30 c38">Adjust timing will change the length of a strip in the sequencer and in the Dope Sheet. Adjust Timing affects only one clip at a time. <em>To adjust timing of multiple shots at the same time see <a href="#bkmrk-roll-an-edit">Roll an Edit</a></em></span></p>
+<p><a href="../images/gallery/2022-06/image-1656526375280.gif"><img alt="image-1656526375280.gif" src="../images/gallery/2022-06/image-1656526375280.gif" /></a></p>
+<hr />
+<h4 id="rename-a-shot_1"><span class="c11 c38 c7 c30">Rename a Shot</span></h4>
+<p><span class="c11 c38 c7 c30">To rename a shot use <strong><span class="c7">Shot&gt;Rename</span></strong>. This will work on a single shot at a time, use the <img alt="image" src="../images/gallery/other/6ebb06a3fddd374b4ab7ac6f089c4815.png" /> to get the next available shot number. Check the rename scene to also rename the scene associated with this strip.</span></p>
+<p><a href="../images/gallery/2022-06/image-1656526403672.png"><img alt="image-1656526403672.png" src="../images/gallery/2022-06/scaled-1680-/image-1656526403672.png" /></a></p>
+<hr />
+<h4 id="rename-all-shots_1"><span class="c11 c38 c7 c30">Rename All Shots</span></h4>
+<p>After editing your shot names may be out of order. To reset the numbering of all shots use <span class="c7"><strong>Shot&gt;Cleanup&gt;Chronological Numbering</strong>. </span>This will rename all shots based on the specified naming convention. Scenes can also be renamed by selecting a scene rename policy.<span class="c49"> </span></p>
+<h1 id="render-your-previz-sequence">Render your Previz Sequence</h1>
+<p class="callout warning"><span class="c37"><span class="c35 c50"><span style="text-decoration: underline;">Note
+</span>When you publish your file, a sequencer render will be generated and uploaded to ShotGrid with all the proper burned in informations. **The pipeline recommended way of rendering is** <span style="background-color: #ff99cc;">**to do a publish** (TODO: link to publish section)</span></span></span></p>
+
+<p><span class="c37"><span class="c35 c50">Rendering is the process of exporting the final frames of animation from the editing area into either Movie or Image files. This rendering workflow allows simple batch rendering of all or selected shots in the </span><span class="c7 c9"><a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html">Sequencer</a></span><span class="c11 c35 c39">. The render area allows for playback of the rendered images.
+</span></span><a href="../images/gallery/2022-06/image-1656526578363.gif"><img alt="image-1656526578363.gif" src="../images/gallery/2022-06/image-1656526578363.gif" /></a></p>
+<ol>
+<li><span style="font-weight: 400;">Navigate to the </span><a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html"><strong>Sequencer</strong></a><span style="font-weight: 400;">&gt;</span><strong>Storyboarding Panel</strong><span style="font-weight: 400;"> in Editing area</span></li>
+<li><span style="font-weight: 400;">Set the following settings under </span><strong>Batch Render</strong><ul>
+<li><span style="font-weight: 400;"> Set media type: Images or Movie. </span><em><span style="font-weight: 400;">This will define the output file type.</span></em></li>
+<li><span style="font-weight: 400;"> Renderer: </span><em><span style="font-weight: 400;">Viewport=Faster Internal=Standard Render Engine</span></em></li>
+<li><span style="font-weight: 400;"> OutputScene: </span><em><span style="font-weight: 400;">This output is usually RENDER or SEQ Render</span></em></li>
+<li><span style="font-weight: 400;"> File Pattern: </span><em><span style="font-weight: 400;">output to a folder called render at the location of the blend file</span></em></li>
+<li><span style="font-weight: 400;">Selection Only: </span><em><span style="font-weight: 400;">only render highlighted clips from the sequencer.</span></em></li>
+<li><span style="font-weight: 400;">Select </span><strong>Sequencer Batch Render</strong><span style="font-weight: 400;"> to begin rendering</span></li>
+</ul>
+</li>
+<li>Once complete the user will see the completed files in the Render area <strong>tab</strong></li>
+</ol>
+<p class="callout warning">***<span style="font-weight: 400;">Ensure your viewport is in </span>*[*<span style="font-weight: 400;">rendered mode</span>*](https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html)*<span style="font-weight: 400;"> when performing a viewport render.</span>***</p>
+
+<h1 id="import-and-conform-sequence-from-editorial">Import and Conform Sequence from Editorial</h1>
+<p>SPA Blender allows us to Import a sequence from editorial and automatically generate a sequence of storyboard panels from it. To begin you will need an AAF file from editorial.</p>
+<p><a href="../images/gallery/2022-10/image-1664815099224.gif"><img alt="image-1664815099224.gif" src="../images/gallery/2022-10/image-1664815099224.gif" /></a></p>
+<ol>
+<li>Open Blender and Navigate to the Sequencer Region</li>
+<li>From the Sequencer header select <strong>Editorial&gt;Timeline I/O&gt;Import Timeline</strong> to import an AAF into Sequencer</li>
+<li>Enter the AAF path into the file browser and confirm</li>
+<li>With your edit imported select <strong>Editorial&gt;Conform&gt;Generate Shots from Panel</strong> to create scene strips from the editorial sequence.</li>
+</ol>
+<h1 id="setting-frame-range-for-render">Setting Frame Range for Render</h1>
+<p>In sequence workflow, we have many different scenes inside a single blend file. To adjust the timing of your sequence's final render, the <strong>EDIT</strong> scene needs to have it's frame range adjusted. Because the Sequencer workflow uses the <strong>EDIT</strong> scene, we can set the frame range directly in the sequencer area.</p>
+<p><a href="../images/gallery/2022-10/image-1666957910608.gif"><img alt="image-1666957910608.gif" src="../images/gallery/2022-10/image-1666957910608.gif" /></a></p>
+<p><em>To Learn More about Render Range see <a href="#differences-between-render-range-and-preview-range"><strong>Differences between Render Range and Preview Range</strong></a></em></p>
+<ol>
+<li>Select all strips in your sequence</li>
+<li>Navigate to the Sequencer area's header</li>
+<li>Selected <strong>View&gt;Range&gt;Set Frame Range to Strips</strong></li>
+</ol>
+<h1 id="setups-scenes-and-collections">Setups, Scenes and Collections</h1>
+<h1 id="understanding-the-sequencer-workflow-at-spa">Understanding the Sequencer Workflow at SPA</h1>
+<p>The sequencer workflow at SPA leverages Blender scenes to manage data.</p>
+<p>An <strong>EDIT</strong> scene is created for you and it will only contain the <strong>Scene Strips</strong> that make up the current edit.</p>
+<p>To use the sequencer workflow, your sequencer region's active scene <span style="color: #339966;">(green area)</span> must be set to this special <strong>EDIT</strong> scene.</p>
+<p>When correctly set, and Synchronization enabled, the rest of your Blender window will update contextually to the current strip's scene content <span style="color: #ff0000;">(red areas)</span> . It's magic!</p>
+<p><a href="../images/gallery/2022-09/image-1664214985782.png"><img alt="image-1664214985782.png" src="../images/gallery/2022-09/scaled-1680-/image-1664214985782.png" /></a></p>
+<ul>
+<li><span style="color: #ff0000;"><strong>Current Scene:</strong> </span>Current scene that is being viewed in the viewport. All regions highlighted in <span style="color: #ff0000;"><strong>Red</strong></span> above reflect data from the current strip's scene.</li>
+<li><span style="color: #339966;"><strong>Master Scene:</strong> </span>The Scene usually called "<strong>EDIT</strong>" that contains the strips that make up this files sequence. The edit region is highlighted in <strong><span style="color: #339966;">Green </span></strong><span style="color: #339966;"><span style="color: #000000;">above.</span></span></li>
+<li><strong><span style="color: #3366ff;">Output Scene</span>:</strong> A blank scene usually called <strong>"RENDER"</strong> which contains the final exported clips.</li>
+</ul>
+<hr />
+<h2 id="override-sequencer-region-scene">Override Sequencer Region Scene</h2>
+<p>Ensure these settings are set to be in the correct sequencer setup.</p>
+<p><a href="../images/gallery/2022-09/image-1664205933705.gif"><img alt="image-1664205933705.gif" src="../images/gallery/2022-09/image-1664205933705.gif" /></a></p>
+<ol>
+<li><strong>Sequencer Region</strong>: Set scene to <strong>EDIT</strong></li>
+<li><strong>Master Scene</strong> set to <strong>EDIT</strong></li>
+</ol>
+<hr />
+<h2 id="creating-new-blank-scene">Creating new Blank Scene</h2>
+<p>In some cases, when Blender files do not already contain a RENDER or EDIT scene users may need to manually create new scenes.</p>
+<p>Follow these steps to create a new Scene to use in the Sequencer Region.</p>
+<p><a href="../images/gallery/2022-09/image-1664206180673.gif"><img alt="image-1664206180673.gif" src="../images/gallery/2022-09/image-1664206180673.gif" /></a></p>
+<ol>
+<li>At the top of your Blender window selected the <strong>Duplicate Scene</strong> Button</li>
+<li><strong>Copy Settings</strong> from current Scene</li>
+<li>Rename to desired name (<strong>EDIT, RENDER)</strong></li>
+<li>Moving the Sequencer will return you the the original scene (if sync is enabled)</li>
+</ol>
+<p class="callout warning">You must have more than one scene available in your blender file to add scene strips. If you cannot add Blender Scenes please follow **Create a New Blank Scene** guide to create an **EDIT** scene.</p>
+
+<hr />
+<h2 id="rendering-to-an-output-scene">Rendering to an Output Scene</h2>
+<p>Output scenes will contain a rendered copy of your edit. Output scenes are used to review and finalize your edit. You can use your output scene to add transitions and effects to the rendered strips.</p>
+<p><a href="../images/gallery/2022-09/image-1664206405704.png"><img alt="image-1664206405704.png" src="../images/gallery/2022-09/scaled-1680-/image-1664206405704.png" /></a></p>
+<ul>
+<li>Ensure <strong>Output Scene</strong> is set to a blank scene like <strong>Render</strong></li>
+</ul>
+<h1 id="understanding-scenes-collections">Understanding Scenes &amp; Collections</h1>
+<h2 id="important-terminology">Important Terminology</h2>
+<h3 id="scene"><span class="c21">Scene</span></h3>
+<p><span class="c3">A Scene in the context of Blender is an environment that contains one or more collections. By default you are always working in at least one scene. Having more than one is a way to organise lots of collections. So if collections contain objects, we can think of our Scene as a kind of theatre stage where our objects can be placed.</span></p>
+<p><img alt="image" src="../images/gallery/other/f5f3668bc624e2d9d38fc08f5974c405.gif" /></p>
+<p><a href="#scene-setups" title="Click here for further information">#scene-setups</a></p>
+<h3 id="strip"><span class="c21">Strip</span></h3>
+<p><span class="c3">A strip in the Video Sequence Editor works like a movie strip in any movie editor you are used to; like in iMovie. Instead of containing a video, Green Strips in Blender are ‘Scene Strips’ and represent different scenes at different times. This allows us to cycle through multiple stages or groups of objects from the sequence perspective.
+</span></p>
+<p><img alt="image" src="../images/gallery/other/eaa9d90ed936aec2700ab1d62e868d5f.gif" /></p>
+<h3 id="collection"><span class="c21">Collection</span></h3>
+<p><span class="c3">A Collection is a container used for grouping elements in the outliner that we are using in the 3D viewport.</span></p>
+<h2 id="_1"><img alt="image" src="../images/gallery/other/c37e8f353e86ea5f40f15b22cb182d63.png" /></h2>
+<p><a href="#collections">Collections</a></p>
+<h1 id="scene-setups">Scene Setups</h1>
+<p><span class="c3">Are Scenes Setups used for creating new Collections inside a reused Setp containing specific elements we don't want to share from shot to shot. </span></p>
+<p><img alt="image" src="../images/gallery/other/20ced12fdeb86b0e66c8cf398da8a18a.gif" /></p>
+<hr />
+<h2 id="identify-same-as-camera-shots">Identify "Same as Camera" Shots</h2>
+<p><span class="c3">3D Previz creates its master blender files based on sequences, environments and division of work among the artists. 2D Layout will create its master Blender files based on sequences, task assignments (Background or Character posing), division of work (shot assignment) and CAM position. Those CAM position will define the amount of 2D setups we will need to create for our sequences.</p>
+<p>A 2D setup is the scene based on the shooting camera. These can work for single shots (one offs) or various (masters &amp; reuses). Although the Previz artists will try and utilize same as cameras/bg’s as much as possible in the 3D phase, spotting opportunities for reusing material is an important tasks we need to address at 2D Layout. Not only it will be saving time for ourselves, but also later on during BG painting.</p>
+<p>We can spot those Same as CAMs in N Panel/ Layout/ ShotCams:</span></p>
+<p><img alt="image" src="../images/gallery/other/3a7734298ded4c02a64f81a57601226e.jpg" /></p>
+<p><span class="c43 c26 c36">Ex: PSH0140, PSH0160 &amp; PSH0180 are sharing the same Shot CAM &amp; Scene:</span></p>
+<ul>
+<li><span class="c43 c26 c36">0140 being the master</span></li>
+<li><span class="c43 c26 c36">0160 being a perfect reuse</span></li>
+<li><span class="c43 c26 c36">0180 being a reuse containing a child of scene</span></li>
+</ul>
+<p><span class="c3">For shots sharing same as CAMs we should always try to reuse our 2D set ups. </span><span class="c3">Ultimately if they don´t work we will be creating a new Scene Setup and redoing them, but we don't want to work the o</span><span class="c3">ther way around.</span></p>
+<p class="callout info"><span class="c3"><span class="c63">Note: Child Scene Setups can be created recursively many times, a new Child setup will always contain the current scene plus an additional collection not shared back to its parent.</span></span></p>
+
+<h3 id="master-scene-straight-forward-reuses-child-of-setups"><span class="c26 c50 c30 c54">Master Scene, straight forward reuses &amp; Child of </span><span class="c26 c50 c30 c54">Setups</span></h3>
+<p>Master are Scene Setups containing Collections of GPOs working for Same as CAMs in different shots.
+The Master will be the original Scene towards which the reuses are pointing. We will be creating this Master the same as any other Setup and then this is how we create a straight forwards reuse.<span class="c3"></p>
+<p>In the same ex:
+B0140 is the Master 2D Setup Scene for PSH0140 and is being used in PSH0160 as straight forward reuse, meaning every element in the scene is the same.
+This is how both PSH0140 &amp; PSH0160 look in the outliner.</span></p>
+<p><img alt="image" src="./images/gallery/other/a4695ec4e36ad46b23c75d05c2d57aac.jpg" /></p>
+<p><span class="c3"> </span></p>
+<h1 id="collections">Collections</h1>
+<p>Before we continue on how we will be using Masters and reuses we need to understand Collections and how we use them. Collections are containers for keeping everything tidy inside our shots: is the way we group elements. In 2D Layout these group collections</p>
+<h5 id="shot-scene-collection"><strong><span class="c37 c26 c30">Shot Scene Collection</span></strong></h5>
+<p>We group and name these elements based on: task/shot Number/elements
+In the same ex:</p>
+<ul>
+<li><strong><span class="c30">B0140</span></strong>: “B” after BG tasks, it´s the Shot Scene Collection for P(Previz)SH(Shot)0140. In the following example.</li>
+<li><strong><span class="c30">C0140</span></strong>: “C” after CH posing task, it´s the Shot Scene Collection for P(Previz)SH(Shot)0140.
+    <img alt="image" src="./images/gallery/other/a4695ec4e36ad46b23c75d05c2d57aac.jpg" /></li>
+</ul>
+<h5 id="elements-inside-our-collections"><span class="c26 c30 c37">Elements inside our Collections</span></h5>
+<p><span class="c36 c30">Grease Pencil Objects (GPOs) &amp; cards </span><span class="c36 c30">like:</span></p>
+<ul>
+<li><span class="c30">BG</span><span class="c3">: Layers of drawings Overlay (OL) 01 (being the closest OL to CAM) up to OL09 (for example, being the farthest to CAM).</span></li>
+<li><span class="c30">Character Collections</span><span class="c3">: characters, animated or not. If there are.</span></li>
+<li><span class="c30">Props Collections</span><span class="c3">: objects that have interaction with characters. If needed.</span></li>
+<li><span class="c30">FX Collections</span><span class="c3">: Special effects. If needed.</span></li>
+<li>
+<p><span class="c30">Others:</span><span class="c3"> reference material. If needed.</p>
+<p>Link to <a href="#conventions-and-details" title="Conventions &amp; Details">Naming Convention</a> to learn more about this.</span></p>
+</li>
+</ul>
+<h1 id="shared-folders">Shared folders</h1>
+<p>They can also be used as containers for element we want to share between shots. Since we are using Scene Collections as the main tool for this purpose, shared folders can carry other type of information (maybe reference material) so they can also be shared between shots that don't share Scenes. Consider that shared material, like objects in a shared folder, can only be oriented towards one single camera, and will appear not facing other Shot CAMs different than the one you´ve originally shared with.
+This is how we create them.
+<img alt="image" src="../images/gallery/other/221d6fd60399ddfd28efd5b916f56a1d.gif" /></p>
+<ol>
+<li><span class="c40">To add an existing </span><strong><span class="c59 c30">Shared Folder</span></strong><span class="c4"> to a new Shot Navigate to the unlinked shot.</span></li>
+<li><span class="c4">Set the link icon to active</span></li>
+<li><span class="c40">The content of that </span><strong><span class="c30 c59">Shared Folder</span></strong><span class="c4"> should now be available in the outliner.</span></li>
+</ol>
+<h1 id="check-objects-usage-in-sequence">Check Object's Usage in Sequence</h1>
+<p>Objects can report which scenes they are being used by. To report an object's usage select that object in your viewport.</p>
+<p><a href="../images/gallery/2022-09/image-1664540235167.gif"><img alt="image-1664540235167.gif" src="../images/gallery/2022-09/image-1664540235167.gif" /></a></p>
+<ol>
+<li>Select Object</li>
+<li>Navigate to <strong>Properties&gt;Object Properties&gt;Sequencer Usage</strong></li>
+<li>Select the <strong>Report Object use by Sequencer</strong> button</li>
+<li>A pop up will appear listing that object's usage.</li>
+</ol>
+<p class="callout info">This information is also stored in the **Info** log. Open the **Info** region to read previous **Object Reports.**</p>
+
+<h1 id="grease-pencils-objects">Grease Pencils Objects</h1>
+<h1 id="understanding-grease-pencils">Understanding Grease Pencils</h1>
+<h3 id="object-and-layer"><span class="c21">Object and layer</span></h3>
+<p><span class="c3">The GPO is both the container and the content of our drawings. </span></p>
+<p><img alt="image" src="../images/gallery/other/577a6dc0ff2db82703f16b8500aaf782.png" /></p>
+<ul>
+<li><span class="c30 c62">The object</span><span class="c3"> itself is the container: the plane into space.</span></li>
+<li><span class="c30 c64">The layers</span><span class="c3"> is the content: our drawings</span></li>
+</ul>
+<p><span class="c3">It's important that we understand this since now we are living in a 3D environment and we will be able to animate on both. Ex: a character moving towards CAM can be now animated
+</span></p>
+<hr />
+<h3 id="line-fill"><span class="c21">Line &amp; fill</span></h3>
+<p>Layers work the same way as in PhotoShop (PS). You can create as many as you needed for your own workflow, but please remember when delivering try to stay as simple and organised as possible. Usually line &amp; fill would be enough.</p>
+<p>Blender allows us to key also in specific layers. To draw on a layer ensure it’s highlighted in the Drawings toolbox. Keep in mind that this can be useful for creating effects (light, glow…).
+<img alt="image" src="../images/gallery/other/57165426e72976ccc79040a0a89f34f3.png" /><span class="c3">
+</span></p>
+<hr />
+<h3 id="materials"><span class="c21">Materials</span></h3>
+<p>At the beginning of each sequence we will need to create the materials we will be using. Materials will be basically the grayscale tint we will be using for our drawing: lines and fills.
+<img alt="image" src="../images/gallery/other/c68f10c17310d849a209d10c3ba12e5a.gif" /><span class="c3">
+Pipeline team is working on creating default Material Libraries for different uses inside the production, including one specific for 2D LO.</span></p>
+<p><span class="c3"> I recommend working with a list similar to this one:</span></p>
+<ul>
+<li><span class="c3">100% black (line) for drawing,</span></li>
+<li><span class="c3"> blue &amp; red (line) for grids &amp;</span></li>
+<li><span class="c3"> 5 to 7 range of grayscale tones</span></li>
+<li><span class="c3">(fill) to fill the drawing.</span></li>
+</ul>
+<p>Unfortunately, for the moment we will have to create our owns when beginning a new sequence.Name it: <span class="c36">Layout/whatever it needs to be</span> (ex: <span class="c36">Layout/30% fill</span>) and Blender will save it for your next shots.</p>
+<h1 id="creating-grease-pencils">Creating Grease Pencils</h1>
+<pre><code>TODO: insert illustration here
+</code></pre>
+<p>Our Scenes or 2D set ups are made of GPO´s: 2D drawings (planes) translating the 3D set up for specific CAM positions. While working on a shot every new GPO should be contained inside Collections.</span></p>
+<hr />
+<h3 id="start-working-on-your-shot"><span class="c21">Start working on your shot</span></h3>
+<ul>
+<li><span class="c3"> (N Panel/Storyboard or Shift+A in Object Mode). A plane or card will be created in a specific location. It’s your choice to first set the placement and then start drawing or the other way around (cursor to CAM, then Shift+F &amp; drag).</span></li>
+<li>In draw Mode (N Panel/Storyboard) click Draw. Now you can start drawing.</li>
+</ul>
+<h3 id="_2"><img alt="image" src="../images/gallery/other/f6598490e6d950fe73de3a5b73f274c2.gif" /></h3>
+<h1 id="moving-grease-pencils">Moving Grease Pencils</h1>
+<p><span class="c3">Grease Pencil objects as mentioned before are containers where all drawing information is stored. By entering Object Mode we can affect the transformation of our Grease Pencil Object in world space.</span></p>
+<p><img alt="image" src="./images/gallery/other/0d945165794bc38f7be3e31986c4a166.gif" /></p>
+<ol>
+<li><span class="c34 c26 c53">Select Draw from the top of the Storyboard panel to exit Draw mode</span></li>
+<li><span class="c34 c26 c53">From the Toolbar on your Left, (open with Shortcut ‘T’) select a tool</span></li>
+<li><span class="c34 c26 c53">Move, Rotate and Scale tools are all available</span></li>
+<li><span class="c34 c26 c53">Your selected gizmo will appear at the “origin” of your drawing represented by a yellow dot</span></li>
+</ol>
+<h1 id="rescale-grease-pencil-proportionally">Rescale Grease Pencil Proportionally</h1>
+<p><span class="c3">Our 2D Set up’s must work as a simplification of the 3D Set-up in terms of number of overlays and placement into space. This will affect mainly the parallax (if there is any) and the focus depth, and will help us gain consistency and cinematography.</p>
+<p>On one hand we need to make our shot work (in terms of parallax, if there is) and on the other we want to stay as simple as possible for the BG and Comp departments. The balance between those two needs will determine the number of OL’s (GPOs) we should use.</span></p>
+<p><img alt="image" src="../images/gallery/other/97a7b3bef9233b76c880530d82b5f9b1.gif" /></p>
+<ol>
+<li><span class="c3">Create a new GPO.</span></li>
+<li><span class="c3">Draw the line based on the 3D Master on each one your GPO´s. Then fill it.</span></li>
+<li>Place them into its correct position in space:</li>
+<li>Select Cam, cursor to active using <strong>Shift + S</strong></li>
+<li><strong>Shift+F</strong> in order to scale (without changing the proportions from ShotCam POV.)</li>
+</ol>
+<h1 id="conventions-and-details">Conventions and Details</h1>
+<h1 id="sequencer-batch-render">Sequencer Batch Render</h1>
+<h2 id="why-did-my-batch-render-fail">Why did my Batch Render Fail?</h2>
+<p>Sequence Batch Render will take the current scene, and render each strip from your sequencer as a clip. Sequencer Batch Render will fail if GPU Shades are not compiled. When Sequence Batch Render is set to VIEWPORT mode, and EEVEE as the render engine, we must ensure that our viewport shading settings are set to <strong>Scene Lights + Scene World.</strong></p>
+<p><a href="../images/gallery/2022-09/image-1663762977049.gif"><img alt="image-1663762977049.gif" src="../images/gallery/2022-09/image-1663762977049.gif" /></a></p>
+<ol>
+<li>Navigate to the Render Settings in Viewport</li>
+<li>Select Render/Material Preview Settings</li>
+<li>Enable <strong>Scene Lights / Scene World</strong> to compile shaders</li>
+</ol>
+<p class="callout info">Sequence Batch Render will not fail when using '**Workbench'** Render Engine, regardless of shader compilation</p>
+
+<hr />
+<h2 id="why-does-my-batch-render-look-different">Why does my Batch Render look different?</h2>
+<p>There is a difference in Blender between it's preview world and it's rendered world. Use one of the following setups to ensure you have a "What you See is What you Get" Experience, User need to align settings in Blender between the Viewport and the Renderer use one of the two following setups:</p>
+<h4 id="workbench">Workbench:</h4>
+<p><a href="../images/gallery/2022-09/image-1663763417133.png"><img alt="image-1663763417133.png" src="../images/gallery/2022-09/scaled-1680-/image-1663763417133.png" /></a></p>
+<ol>
+<li>Set Material Shading mode to <strong>SOLID</strong> view</li>
+<li>Set Render Engine to <strong>WORKBENCH</strong></li>
+</ol>
+<h4 id="eevee"><strong>Eevee</strong></h4>
+<p><a href="../images/gallery/2022-09/image-1663763483601.png"><img alt="image-1663763483601.png" src="../images/gallery/2022-09/scaled-1680-/image-1663763483601.png" /></a></p>
+<ol>
+<li>Set Material Shading mode to <strong>RENDERED</strong> view</li>
+<li>Set Render Engine to <strong>EEVEE</strong></li>
+<li>Enable <strong>Scene Lights / Scene World</strong></li>
+</ol>
+<hr />
+<h2 id="can-i-check-my-work-before-rendering">Can I check my work before Rendering?</h2>
+<p>Using the Sequencer + Preview option in Blender we can see a preview of what objects will be rendered by the Internal Renderer.
+<a href="../images/gallery/2022-09/image-1663764106086.gif"><img alt="image-1663764106086.gif" src="../images/gallery/2022-09/image-1663764106086.gif" /></a></p>
+<ol>
+<li>Select <strong>Sequencer</strong> from the <strong>Sequencer</strong> Header Menu</li>
+<li>Select the option <strong>Sequencer + Preview</strong></li>
+<li>Scrubbing the timeline will now show a Preview Window of your sequence Render in <strong>Solid mode.</strong></li>
+</ol>
+<h1 id="differences-between-render-range-and-preview-range">Differences between Render Range and Preview Range</h1>
+<h3 id="frame-range">Frame Range</h3>
+<p>In Blender the Range is the length of each Blender Scene's timeline. To set the Range, navigate to <strong>Scene Properties&gt;Frame Range</strong> or in the <strong>Timeline</strong> area.</p>
+<p><a href="../images/gallery/2022-10/image-1666958512164.png"><img alt="image-1666958512164.png" src="../images/gallery/2022-10/scaled-1680-/image-1666958512164.png" /></a></p>
+<hr />
+<h3 id="preview-range">Preview Range</h3>
+<p>Preview Range is a temporary range on your scene, it is used to playback small sections of a blender file. The <strong>Sequencer</strong> workflow uses Preview Range to indicate the beginning and end of the current shot. A preview range is a signified with a <a href="../images/gallery/2022-10/image-1666958568322.png"><img alt="image-1666958568322.png" src="../images/gallery/2022-10/scaled-1680-/image-1666958568322.png" /> </a>symbol, and an orange overlay. Preview Range doesn't impact the render Range.</p>
+<p><a href="../images/gallery/2022-10/image-1666958775088.png"><img alt="image-1666958775088.png" src="../images/gallery/2022-10/scaled-1680-/image-1666958775088.png" /></a></p>
+<h5 id="_3"></h5>
+<h5 id="how-to-disable-preview-range-in-sequencer-workflow">How to disable Preview Range in Sequencer workflow?</h5>
+<p><a href="../images/gallery/2022-10/image-1666959069390.gif"><img alt="image-1666959069390.gif" src="../images/gallery/2022-10/image-1666959069390.gif" /></a></p>
+<ol>
+<li>Under <strong>Sequencer&gt;Storyboard Panel&gt; Use Preview Range</strong> set to disabled</li>
+<li>Clear the current range by selecting the <a href="../images/gallery/2022-10/image-1666959113627.png"><img alt="image-1666959113627.png" src="../images/gallery/2022-10/scaled-1680-/image-1666959113627.png" /></a> in the timeline area</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../anim/" class="btn btn-neutral float-right" title="Animation Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../anim/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
