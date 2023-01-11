@@ -835,7 +835,7 @@ Pin your Shift &amp; Trace to a selected frame using the new PIN icon. This mean
 
 ### <span class="c4">Import via Clipboard</span>
 
-To import an image from clipboard take a screenshot using the built in <span class="c10">[Windows Screenshot tools](https://www.google.com/url?q=https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b&sa=D&source=editors&ust=1657899216537274&usg=AOvVaw0rS20G1yTzaVP2h2uKaZNL)</span><span class="c0">, this will automatically copy the screenshot to your clipboard. You can also copy an image layer from photoshop or copy an image from the web.</span>
+To import an image from clipboard take a screenshot using the built in <span class="c10">[Windows Screenshot tools](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b)</span><span class="c0">, this will automatically copy the screenshot to your clipboard. You can also copy an image layer from photoshop or copy an image from the web.</span>
 
 [![image-1658162916778.gif](./images/gallery/2022-07/image-1658162916778.gif)](./images/gallery/2022-07/image-1658162916778.gif)
 

@@ -181,7 +181,7 @@ After editing your shot names may be out of order. To reset the numbering of all
 
 # Refining your Edit
 
-<span class="c5"><span class="c35 c50">Using the Editing Workspace, refinements can be made to edit using Blender’s </span><span class="c35 c7">[Sequencer](https://www.google.com/url?q=https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html?highlight%3Dsequencer&sa=D&source=editors&ust=1656528232040635&usg=AOvVaw1tz6xymIuZJkK_vO4U3Ije)</span><span class="c35 c50">. </span><span class="c11 c39 c35">The Editing area can be used to refine your edit and add effects/transitions as needed.</span></span>
+<span class="c5"><span class="c35 c50">Using the Editing Workspace, refinements can be made to edit using Blender’s </span><span class="c35 c7">[Sequencer](https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html)</span><span class="c35 c50">. </span><span class="c11 c39 c35">The Editing area can be used to refine your edit and add effects/transitions as needed.</span></span>
 
 [![image-1656525810413.gif](./images/gallery/2022-06/image-1656525810413.gif)](./images/gallery/2022-06/image-1656525810413.gif)
 
@@ -276,10 +276,10 @@ After editing your shot names may be out of order. To reset the numbering of all
 <p class="callout warning"><span class="c37"><span class="c35 c50"><span style="text-decoration: underline;">Note
 </span>When you publish your file, a sequencer render will be generated and uploaded to ShotGrid with all the proper burned in informations. **The pipeline recommended way of rendering is** <span style="background-color: #ff99cc;">**to do a publish** (TODO: link to publish section)</span></span></span></p>
 
-<span class="c37"><span class="c35 c50">Rendering is the process of exporting the final frames of animation from the editing area into either Movie or Image files. This rendering workflow allows simple batch rendering of all or selected shots in the </span><span class="c7 c9">[Sequencer](https://www.google.com/url?q=https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html?highlight%3Dsequencer&sa=D&source=editors&ust=1656528232050712&usg=AOvVaw2PwVLZCdssxaXsydAk9wb_)</span><span class="c11 c35 c39">. The render area allows for playback of the rendered images.
+<span class="c37"><span class="c35 c50">Rendering is the process of exporting the final frames of animation from the editing area into either Movie or Image files. This rendering workflow allows simple batch rendering of all or selected shots in the </span><span class="c7 c9">[Sequencer](https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html)</span><span class="c11 c35 c39">. The render area allows for playback of the rendered images.
 </span></span>[![image-1656526578363.gif](./images/gallery/2022-06/image-1656526578363.gif)](./images/gallery/2022-06/image-1656526578363.gif)
 
-1. <span style="font-weight: 400;">Navigate to the </span>[**Sequencer**](https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html?highlight=sequencer)<span style="font-weight: 400;">&gt;</span>**Storyboarding Panel**<span style="font-weight: 400;"> in Editing area</span>
+1. <span style="font-weight: 400;">Navigate to the </span>[**Sequencer**](https://docs.blender.org/manual/en/latest/editors/video_sequencer/sequencer/index.html)<span style="font-weight: 400;">&gt;</span>**Storyboarding Panel**<span style="font-weight: 400;"> in Editing area</span>
 2. <span style="font-weight: 400;">Set the following settings under </span>**Batch Render**
     - <span style="font-weight: 400;"> Set media type: Images or Movie. </span>*<span style="font-weight: 400;">This will define the output file type.</span>*
     - <span style="font-weight: 400;"> Renderer: </span>*<span style="font-weight: 400;">Viewport=Faster Internal=Standard Render Engine</span>*
