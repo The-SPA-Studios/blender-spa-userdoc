@@ -32,6 +32,11 @@ and run Blender from there.
 
 [Download _Blender SPA v2.4.1_ for _Windows 64bits_][blender_spa-2.4.1-bundle-windows64.zip]
 
+Then, go to Edit > Preferences > Add-ons and enable:
+- SPA: 2D Animation
+- SPA: Sequencer
+
+
 ### Linux, MacOS and other platforms
 
 While Blender and its addons are cross platform products,
