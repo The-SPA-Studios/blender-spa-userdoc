@@ -3,7 +3,7 @@
 This repository contains the sources of the user documentation
 to guide you through the tools built into the SPA Studio's Blender fork.
 
-TODO: Add link to the documentation
+[Go to the documentation](https://the-spa-studios.github.io/blender-spa-userdoc/)
 
 ## Building the doc
 
