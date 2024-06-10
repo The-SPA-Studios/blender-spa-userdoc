@@ -8,7 +8,7 @@
     <title>Blender SPA User Documentation</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,12 +17,11 @@
         var mkdocs_page_url = "/blender-spa-userdoc/";
       </script>
     
-    <script src="js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,7 +33,7 @@
           <a href="." class="icon icon-home"> Blender SPA User Documentation
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -88,8 +87,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Introduction</li>
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -121,11 +120,14 @@ with core changes and addons for Windows (64 bits).</p>
 <p>Simply download it from the link below and unzip it,
 and run Blender from there.</p>
 <p><a href="https://thespastudios.com/public-links/blender_spa-2.4.1-bundle-windows64.zip">Download <em>Blender SPA v2.4.1</em> for <em>Windows 64bits</em></a></p>
+<p>Then, go to Edit &gt; Preferences &gt; Add-ons and enable:
+- SPA: 2D Animation
+- SPA: Sequencer</p>
 <h3 id="linux-macos-and-other-platforms">Linux, MacOS and other platforms</h3>
 <p>While Blender and its addons are cross platform products,
 we do not provide builds other than <em>Windows (64 bits)</em>.</p>
 <p>To test <em>Blender SPA</em> on a different platform you would have to
-get and compile the <a href="https://github.com/blender/blender">Blender fork</a> from its sources
+get and compile the <a href="https://github.com/The-SPA-Studios/blender">Blender fork</a> from its sources
 and then manually install the <a href="https://github.com/The-SPA-Studios/2d-anim-addon">2D Animation</a> and <a href="https://github.com/The-SPA-Studios/sequencer-addon">Sequencer</a> addons.</p>
               
             </div>
@@ -159,20 +161,21 @@ and then manually install the <a href="https://github.com/The-SPA-Studios/2d-ani
     
   </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme_extra.js" defer></script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
 </html>
 
 <!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-01-11 17:49:01.606771+00:00
+MkDocs version : 1.5.3
+Build Date UTC : 2024-06-10 10:02:53.862539+00:00
 -->
