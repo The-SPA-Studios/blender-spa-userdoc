@@ -46,7 +46,7 @@ To test _Blender SPA_ on a different platform you would have to
 get and compile the [Blender fork][blender-spa] from its sources
 and then manually install the [2D Animation][2d-anim-addon] and [Sequencer][sequencer-addon] addons.
 
-[blender-spa]: https://github.com/blender/blender
+[blender-spa]: https://github.com/The-SPA-Studios/blender
 [2d-anim-addon]: https://github.com/The-SPA-Studios/2d-anim-addon
 [sequencer-addon]: https://github.com/The-SPA-Studios/sequencer-addon
 [blender_spa-2.4.1-bundle-windows64.zip]: https://thespastudios.com/public-links/blender_spa-2.4.1-bundle-windows64.zip
